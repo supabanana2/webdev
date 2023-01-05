@@ -1,0 +1,231 @@
+// Custom.scss
+
+// Include any default variable overrides here
+/* 
+Colors 
+*/
+$primary: rgb(135, 206, 235);
+$sun: rgb(251, 227, 51);
+
+
+
+// Import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+// Add additional custom code here
+/* 
+Colors 
+*/
+
+
+/* 
+Fonts 
+*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold
+}
+
+.display-1, .display-2, .display-3,
+.display-4, .display-5, .display-6 {
+  font-family: "Nunito", sans-serif;
+}
+
+html, body, .tooltip, .popover {
+  font-family: "Nunito", sans-serif;
+}
+
+
+/* 
+Animations 
+*/
+// Navbar: Background transition
+.navbar {
+  transition: background-color 1s ease 0s;
+}
+
+// Navbar: Scroll Offset
+html {
+  scroll-padding-top: 24px;
+}
+
+
+// /*
+// NavBar
+// */
+// /* https://codepen.io/sonorangirl/pen/XmRBjq */
+// // .navbar {
+// //   //height: 80px;
+// //   background-color: $bg-dark !important;
+// //   border: none;
+// //   color: white;
+// //   transition: background-color 1s ease 0s;
+// // }
+
+// // .navbar-default {
+// //   .navbar-brand {
+// //     color: white;    
+// //   }
+// //   .navbar-nav {  
+// //     > li {
+// //       > a {
+// //         color: white;
+// //       }
+// //       > a:hover, > a:active, > a:focus {
+// //         color: $gray-500;
+// //       }
+// //     } //end li
+// //   } //end .navbar-navs
+// // }
+
+// .navbar.solid {
+//   background-color: $gray-100;
+//   transition: background-color 1s ease 0s;
+//   box-shadow: 0 0 4px grey;
+
+//   .navbar-brand {
+//     color: black;
+//     transition: color 1s ease 0s;
+//   }
+//   .navbar-nav {
+//      > li {
+//         > a {
+//           color: $gray-800;
+//           transition: color 1s ease 0s;
+//         }
+//      } //end li
+//   } //end .navbar-nav
+// }
+
+// /* Set the border color to the desired color */
+// //.custom-toggler.navbar-toggler {
+//   //  border-color: white;
+//   //}
+//   //.custom-toggler .navbar-toggler-icon {
+//     //background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(218, 218, 218, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+//     //}
+
+
+// /*
+// // https://forum.bootstrapstudio.io/t/change-hamburger-icon/8990/2
+// .navbar-toggler-icon {
+//   background-image: none!important;
+//   background-color: var(--bs-gray-800);
+//   height: 3px;
+//   width: 25px;
+//   margin: 10px 0;
+//   position: relative;
+//   transition: all 0.35s ease-out;
+//   transform-origin: center;
+// }
+
+// .navbar-toggler-icon::before {
+//   display: block;
+//   background-color: var(--bs-gray-800);
+//   height: 3px;
+//   content: "";
+//   position: relative;
+//   top: -7px;
+//   transition: all 0.15s ease-out; 
+//   //taken down to hide quicker
+//   transform-origin: center;
+// }
+
+// .navbar-toggler-icon::after {
+//   display: block;
+//   background-color: var(--bs-gray-800);
+//   height: 3px;
+//   content: "";
+//   position: relative;
+//   top: 4px;
+//   transition: all 0.35s ease-out;
+//   transform-origin: center;
+// }
+
+// .navbar-dark .navbar-toggler-icon,
+// .navbar-dark .navbar-toggler-icon::before,
+// .navbar-dark .navbar-toggler-icon::after {
+//   background-color: var(--bs-gray-100);
+// }
+
+// .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+//   transform: rotate(45deg);
+// }
+
+// .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+//   opacity: 0;
+// }
+
+// .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+//   transform: rotate(-90deg) translateX(7px);
+// }
+// */
+
+
+/*
+Header
+*/
+// /*.bg-banner {
+//     background: no-repeat;
+//     background-position: center;
+//     background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp');
+//     background-size: cover;
+// }*/
+
+.custom-shape-divider-header {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 100;
+}
+
+.custom-shape-divider-header svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
+}
+
+.custom-shape-divider-header .shape-fill {
+  fill: $gray-100;
+}
+
+
+/*
+Section
+*/
+.custom-shape-divider-header .shape-fill-section {
+  fill: $white;
+}
+
+/*
+Footer
+*/
+.custom-shape-divider-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-footer svg {
+  position: relative;
+  display: block;
+  width: calc(209% + 1.3px);
+  height: 87px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-footer .shape-fill {
+  fill: $light;
+}
+
